@@ -7,9 +7,10 @@ module Coinone
 
       attr_reader :result
       attr_reader :order_id
+      attr_reader :api_response_hash
 
       def initialize(options={})
-
+        @api_response_hash = options
         @result = options[:result] || nil
         @order_id= nil
 
